@@ -12,8 +12,7 @@ const App = () => {
 
   useEffect(() => {
     alanBtn({
-      key:
-        "0ece032e9ba4b848609da17e13da61f52e956eca572e1d8b807a3e2338fdd0dc/stage",
+      key: process.env.REACT_APP_ALAN_KEY,
       onCommand: ({ command, articles, number }) => {
         if (command === "newNews") {
           setArticles(articles);
